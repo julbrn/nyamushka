@@ -1,4 +1,9 @@
 @font-face {
-  font-family: "Exo";
+  font-family: "Exo2.0-Thin";
   src: url("Exo2.0-Thin.otf") format("opentype");
+}
+
+@font-face {
+  font-family: "Trebuchet";
+  src: url("trebuchetms.ttf") format("truetype");
 }

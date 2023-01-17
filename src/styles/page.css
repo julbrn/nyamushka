@@ -1,0 +1,9 @@
+.page {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  width: 100%;
+  min-height: 100vh;
+  background-image: url("../images/Pattern@2x.png");
+  background-repeat: no-repeat, repeat;
+}
