@@ -6,11 +6,11 @@ const App = () => {
     <main className="page">
       <div className="content">
         <h1 className="title">Ты сегодня покормил кота?</h1>
-        <div className="cards">
+        <ul className="cards">
           <Card>
 
           </Card>
-        </div>
+        </ul>
       </div>
     </main>
   );

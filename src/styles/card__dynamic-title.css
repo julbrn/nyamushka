@@ -1,0 +1,6 @@
+.card__dynamic-title {
+  font-weight: 400;
+  color: var(--font-grey);
+  font-size: 16px;
+  line-height: 1.16;
+}

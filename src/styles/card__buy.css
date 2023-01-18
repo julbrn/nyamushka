@@ -1,0 +1,9 @@
+.card__buy {
+  font-family: var(--basic-font);
+  font-weight: 400;
+  color: var(--font-light);
+  font-size: 13px;
+  line-height: 1.16;
+  padding: 0;
+  margin: 14px 0 0;
+}

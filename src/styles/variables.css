@@ -3,8 +3,10 @@
   --font-grey: #666;
   --font-light: #fff;
   --card-bg: #fff;
-  --blue-color: #2ea8e6;
+  --blue-color: #1698d9;
   --pink-color: #d91667;
+  --yellow-color: #ffff66;
   --main-title-font: "Exo2.0-Thin", Arial, sans-serif;
   --basic-font: "Trebuchet", Arial, sans-serif;
+  --card-border-width: 4px;
 }

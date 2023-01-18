@@ -4,6 +4,14 @@
   flex-wrap: wrap;
   width: 100%;
   min-height: 100vh;
-  background-image: url("../images/Pattern@2x.png");
-  background-repeat: no-repeat, repeat;
+  background-image: linear-gradient(
+      to top,
+      rgba(0, 0, 0, 0.5),
+      rgba(0, 0, 0, 0) 50%,
+      rgba(0, 0, 0, 0.5)
+    ),
+    url("../images/Pattern@2x.png");
+  background-size: 65%;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }

@@ -1,30 +1,26 @@
 import cat from "../images/cat.png";
 
-function Card({ link }) {
+function Card() {
   return (
-    <div className="card" >
-      <div className="card__border">
-        <div className="card_content">
-          <div className='availability'>
-            <div className='product_title' >Сказочное заморское яство</div>
-            <div className='product_name'>Нямушка</div>
-            <div className='product_taste'></div>
-            <div className='product_number_of_servings'><strong></strong> порций</div>
-            <div className='product_gifts'></div>
-            <img className='cat' src={cat} alt="cat" />
-          </div>
-          <div className='product_weight'>
-            <div className='circle'>
-              <div className='text_weight'>
-              </div>
-              <span>кг </span>
-            </div>
+    <li className="card__wrapper">
+      <div className="card" >
+        <div className="card__info">
+          <span className="card__dynamic-title">Сказочное заморское яство</span>
+          <h2 className="card__title">Нямушка</h2>
+          <h3 className="card__subtitle">с фуа-гра</h3>
+          <div className="card__specs">
+            <p className="card__portions"><span className="card__specs_bold">10</span> порций</p>
+            <p className="card__bonus">мышь в подарок</p>
           </div>
         </div>
+        <img className='card__cat' src={cat} alt="cat" />
+        <div className='card__circle'>
+          <span className='card__circle-weight'>5</span>
+          <span className='card__circle-uom'>кг</span>
+        </div>
       </div>
-      <div className="bottom_text">
-      </div>
-    </div>
+      <p className="card__buy">Чего сидишь? Порадуй котэ, <a className="card__buy_link" href="./">купи</a></p>
+    </li>
   )
 }
 
