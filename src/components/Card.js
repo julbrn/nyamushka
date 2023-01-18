@@ -1,4 +1,5 @@
 import cat from "../images/cat.png";
+import cat2 from "../images/cat-opacity.png";
 import React, { useState } from "react";
 
 
@@ -31,8 +32,8 @@ function Card({ productInfo }) {
 
   return (
     <li className="card__wrapper">
-      <div className={`card ${(status === "isActive") ? "card_selected" : ""} ${productInfo.disabled ? "card_disabled" : ""}`} onClick={handleStatus} onMouseOver={handleHoverOn}
-        onMouseOut={handleHoverOff}>
+      <div className={`card ${(status === "isActive") ? "card_selected" : ""} ${productInfo.disabled ? "card_disabled" : ""}`} onClick={handleStatus} onMouseEnter={handleHoverOn}
+        onMouseLeave={handleHoverOff}>
         <div className="card__info">
           <span className="card__dynamic-title">   {hover === "hoverActive"
             ? productInfo.top_text.deleted
@@ -43,7 +44,7 @@ function Card({ productInfo }) {
             {productInfo.specs.map((spec, index) => <li key={index}>{spec}</li>)}
           </ul>
         </div>
-        <img className='card__cat' src={cat} alt="cat" />
+        <img className='card__cat' src={productInfo.disabled ? cat2 : cat} alt="cat" />
         <div className='card__circle'>
           <span className='card__circle-weight'>{productInfo.weight}</span>
           <span className='card__circle-uom'>{productInfo.uom}</span>
