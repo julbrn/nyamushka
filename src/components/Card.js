@@ -1,22 +1,22 @@
 import cat from "../images/cat.png";
 
-function Card() {
+function Card(props) {
+  const { productInfo } = props;
   return (
-    <li className="card__wrapper">
+    <li key={props.id} className="card__wrapper">
       <div className="card" >
         <div className="card__info">
-          <span className="card__dynamic-title">Сказочное заморское яство</span>
-          <h2 className="card__title">Нямушка</h2>
-          <h3 className="card__subtitle">с фуа-гра</h3>
-          <div className="card__specs">
-            <p className="card__portions"><span className="card__specs_bold">10</span> порций</p>
-            <p className="card__bonus">мышь в подарок</p>
-          </div>
+          <span className="card__dynamic-title">{productInfo.top_text}</span>
+          <h2 className="card__title">{productInfo.title}</h2>
+          <h3 className="card__taste">{productInfo.taste}</h3>
+          <ul className="card__specs">
+            {productInfo.specs.map((spec, index) => <li key={index}>{spec}</li>)}
+          </ul>
         </div>
         <img className='card__cat' src={cat} alt="cat" />
         <div className='card__circle'>
-          <span className='card__circle-weight'>5</span>
-          <span className='card__circle-uom'>кг</span>
+          <span className='card__circle-weight'>{productInfo.weight}</span>
+          <span className='card__circle-uom'>{productInfo.uom}</span>
         </div>
       </div>
       <p className="card__buy">Чего сидишь? Порадуй котэ, <a className="card__buy_link" href="./">купи</a></p>

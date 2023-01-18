@@ -1,15 +1,17 @@
-import React from 'react'
+import React from 'react';
+import { useEffect, useState } from 'react';
 import Card from './Card.js';
+import products from "../utils/database.json";
 
-const App = () => {
+function App() {
   return (
     <main className="page">
       <div className="content">
         <h1 className="title">Ты сегодня покормил кота?</h1>
         <ul className="cards">
-          <Card>
-
-          </Card>
+          {products.products.map(productInfo => {
+            return <Card productInfo={productInfo} key={productInfo._id} />
+          })}
         </ul>
       </div>
     </main>
