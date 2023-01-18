@@ -2,5 +2,12 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin: 0 40px 40px;
+  padding: 0 40px 40px;
+}
+
+@media screen and (max-width: 900px) {
+  .card__wrapper {
+    padding-left: clamp(0.87rem, calc(-1.69rem + 5.86vw), 1.6rem);
+    padding-right: clamp(0.87rem, calc(-1.69rem + 5.86vw), 1.6rem);
+  }
 }

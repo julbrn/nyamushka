@@ -13,6 +13,7 @@
   justify-content: space-between;
   padding: var(--card-border-width);
   box-sizing: content-box;
+  transition: transform 0.3s ease;
 }
 
 .card::before {
@@ -27,4 +28,9 @@
   background: linear-gradient(135deg, transparent 30px, var(--card-bg) 0) top
     left;
   z-index: -1;
+}
+
+.card:hover {
+  transform: translateY(-2%);
+  cursor: pointer;
 }
