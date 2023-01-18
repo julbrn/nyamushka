@@ -1,0 +1,8 @@
+.card_selected {
+  background: linear-gradient(135deg, transparent 30px, var(--pink-color) 0) top
+    left;
+}
+
+.card_selected .card__circle {
+  background-color: var(--pink-color);
+}

@@ -1,9 +1,11 @@
  {"products": [
   {
     "_id": 0,
-    "hoverPermission": true,
-    "isActive": true,
-    "top_text": "Сказочное заморское яство",
+    "disabled": false,
+    "top_text": {
+      "default": "Сказочное заморское яство",
+      "deleted": "Котэ не одобряет?"
+    },
     "title": "Нямушка",
     "taste": "с фуа-гра",
     "specs": [
@@ -16,9 +18,11 @@
   },
   {
     "_id": 1,
-    "hoverPermission": true,
-    "isActive": true,
-    "top_text": "Сказочное заморское яство",
+    "disabled": false,
+    "top_text": {
+      "default": "Сказочное заморское яство",
+      "deleted": "Котэ не одобряет?"
+    },
     "title": "Нямушка",
     "taste": "с рыбой",
     "specs": [
@@ -31,9 +35,11 @@
   },
   {
     "_id": 2,
-    "hoverPermission": true,
-    "isActive": true,
-    "top_text": "Сказочное заморское яство",
+    "disabled": true,
+    "top_text": {
+      "default": "Сказочное заморское яство",
+      "deleted": "Котэ не одобряет?"
+    },
     "title": "Нямушка",
     "taste": "с курой",
     "specs": [

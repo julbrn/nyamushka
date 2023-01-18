@@ -6,14 +6,14 @@ import products from "../utils/database.json";
 function App() {
   return (
     <main className="page">
-      <div className="content">
+      <section className="products">
         <h1 className="title">Ты сегодня покормил кота?</h1>
         <ul className="cards">
           {products.products.map(productInfo => {
             return <Card productInfo={productInfo} key={productInfo._id} />
           })}
         </ul>
-      </div>
+      </section>
     </main>
   );
 };

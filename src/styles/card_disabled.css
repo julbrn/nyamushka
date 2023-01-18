@@ -1,0 +1,10 @@
+.card_disabled {
+  background: linear-gradient(135deg, transparent 30px, var(--disabled-color) 0)
+    top left;
+  color: var(--disabled-color);
+  pointer-events: none;
+}
+
+.card_disabled .card__circle {
+  background-color: var(--disabled-color);
+}
