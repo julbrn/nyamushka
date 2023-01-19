@@ -30,11 +30,6 @@
   z-index: -1;
 }
 
-.card:hover {
-  transform: translateY(-2%);
-  cursor: pointer;
-}
-
 @media screen and (min-width: 1200px) {
   .card:hover {
     transform: translateY(-2%);
