@@ -2,5 +2,5 @@
   text-decoration: none;
   color: var(--blue-color);
   padding-bottom: 1px;
-  background: url("../images/underline.svg") no-repeat bottom center;
+  background: url("../../../images/underline.svg") no-repeat bottom center;
 }
