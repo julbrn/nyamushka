@@ -8,8 +8,6 @@
 
 Демо сайта на Github Pages: https://julbrn.github.io/nyamushka/
 
-## Level I: Вопросы
-
 Одностраничный сайт создан при помощи [Create React App](https://github.com/facebook/create-react-app).
 
 ## Доступные команды
