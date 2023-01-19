@@ -2,7 +2,7 @@
   "name": "nyamushka",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://nyamushka.github.io/",
+  "homepage": "https://julbrn.github.io/nyamushka/",
   "devDependencies": {
     "gh-pages": "^4.0.0",
     "prettier": "2.7.1"
