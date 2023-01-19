@@ -6,7 +6,7 @@
 
 ## Level II: "Нямушка :3"
 
-Демо сайта на Github Pages: ВСТАВИТЬ ССЫЛКУ
+Демо сайта на Github Pages: https://julbrn.github.io/nyamushka/
 
 ## Level I: Вопросы
 

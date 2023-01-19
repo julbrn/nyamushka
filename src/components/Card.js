@@ -1,7 +1,7 @@
 import cat from "../images/cat.png";
 import cat2 from "../images/cat-opacity.png";
 import React, { useState } from "react";
-import DOMPurify from 'dompurify';
+import { makeDigitsBold, sanitizedData } from "../utils/makeDigitsBold"
 
 
 function Card({ productInfo }) {
@@ -30,21 +30,11 @@ function Card({ productInfo }) {
     setHover(false);
   };
 
-  function makeDigitsBold(str) {
-    return str.replace(/\d+/g, function (match) {
-      return `<b>${match}</b>`;
-    });
-
-  }
-
-  const sanitizedData = (data) => ({
-    __html: DOMPurify.sanitize(data)
-  })
 
   return (
     <li className="card__wrapper">
-      <div className={`card ${(status === "isActive") ? "card_selected" : ""} ${productInfo.disabled ? "card_disabled" : ""}`} onClick={handleStatus} onMouseEnter={handleHoverOn}
-        onMouseLeave={handleHoverOff}>
+      <div className={`card ${(status === "isActive") ? "card_selected" : ""} ${productInfo.disabled ? "card_disabled" : ""}`} onClick={handleStatus} onMouseEnter={handleHoverOn} onKeyPress={handleStatus}
+        onMouseLeave={handleHoverOff} aria-label="Choose the product" tabIndex={0}>
         <div className="card__info">
           <span className="card__dynamic-title">   {hover === "hoverActive"
             ? productInfo.top_text.deleted
