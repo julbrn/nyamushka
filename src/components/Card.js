@@ -50,7 +50,24 @@ function Card({ productInfo }) {
           <span className='card__circle-uom'>{productInfo.uom}</span>
         </div>
       </div>
-      <p className="card__buy">Чего сидишь? Порадуй котэ, <a className="card__buy_link" href="./">купи</a></p>
+      {productInfo.disabled ? (
+        <p className="card__buy card__buy_out-of-stock">
+          {`Печалька, ${productInfo.taste} закончился`}
+        </p>
+      ) : status === "isActive" ? (
+        <p className="card__buy"> {productInfo.bottom_text}</p>
+      ) : (
+        <p className="card__buy">
+          {`Чего сидишь? Порадуй котэ, `}
+          <a
+            href="#s"
+            className="card__buy_link"
+            onClick={handleStatus}
+          >
+            купи
+          </a>
+        </p>
+      )}
     </li>
   )
 }
