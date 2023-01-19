@@ -59,13 +59,12 @@ function Card({ productInfo }) {
       ) : (
         <p className="card__buy">
           {`Чего сидишь? Порадуй котэ, `}
-          <a
-            href="#s"
+          <button
             className="card__buy_link"
             onClick={handleStatus}
           >
             купи
-          </a>
+          </button>
         </p>
       )}
     </li>
