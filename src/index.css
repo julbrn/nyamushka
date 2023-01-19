@@ -13,14 +13,12 @@
 @import url(./styles/card/__buy/card__buy.css);
 @import url(./styles/card/__buy/card__buy_link.css);
 @import url(./styles/card/__buy/card__buy_out-of-stock.css);
-@import url(./styles/card/card__portions.css);
-@import url(./styles/card/card__bonus.css);
 @import url(./styles/card/card__title.css);
 @import url(./styles/card/card__taste.css);
 @import url(./styles/card/card__dynamic-title.css);
 @import url(./styles/card/card__wrapper.css);
 @import url(./styles/card/card__info.css);
 @import url(./styles/card/card__specs.css);
+@import url(./styles/card/card__spec.css);
 @import url(./styles/card/card_selected.css);
 @import url(./styles/card/card_disabled.css);
-@import url(./styles/card/card__specs_bold.css);

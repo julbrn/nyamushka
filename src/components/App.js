@@ -1,5 +1,4 @@
 import React from 'react';
-import { useEffect, useState } from 'react';
 import Card from './Card.js';
 import products from "../utils/database.json";
 

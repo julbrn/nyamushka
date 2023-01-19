@@ -1,6 +1,7 @@
 import cat from "../images/cat.png";
 import cat2 from "../images/cat-opacity.png";
 import React, { useState } from "react";
+import DOMPurify from 'dompurify';
 
 
 function Card({ productInfo }) {
@@ -29,6 +30,16 @@ function Card({ productInfo }) {
     setHover(false);
   };
 
+  function makeDigitsBold(str) {
+    return str.replace(/\d+/g, function (match) {
+      return `<b>${match}</b>`;
+    });
+
+  }
+
+  const sanitizedData = (data) => ({
+    __html: DOMPurify.sanitize(data)
+  })
 
   return (
     <li className="card__wrapper">
@@ -41,10 +52,10 @@ function Card({ productInfo }) {
           <h2 className="card__title">{productInfo.title}</h2>
           <h3 className="card__taste">{productInfo.taste}</h3>
           <ul className="card__specs">
-            {productInfo.specs.map((spec, index) => <li key={index}>{spec}</li>)}
+            {productInfo.specs.map((spec, index) => <li className="card__spec" key={index} dangerouslySetInnerHTML={sanitizedData(makeDigitsBold(spec))} />)}
           </ul>
         </div>
-        <img className='card__cat' src={productInfo.disabled ? cat2 : cat} alt="cat" />
+        <img className='card__cat' src={productInfo.disabled ? cat2 : cat} alt="cute fluffy cat" />
         <div className='card__circle'>
           <span className='card__circle-weight'>{productInfo.weight}</span>
           <span className='card__circle-uom'>{productInfo.uom}</span>
