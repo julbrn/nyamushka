@@ -4,8 +4,11 @@
   color: var(--font-light);
   font-size: 13px;
   line-height: 1.16;
-  padding: 0;
+  padding: 0 0 15px 0;
+  height: 50px;
   margin: 15px 0 0;
-  max-width: 310px;
+  max-width: 318px;
   text-align: center;
+  text-overflow: ellipsis;
+  overflow: hidden;
 }
